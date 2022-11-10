@@ -12,18 +12,18 @@ import tether from './pictures/t.webp';
 
 
 
- const  COINS=[{name:'Bitcoain',price: 'Rs.1343433',precent: -0.75,marketcap:'Rs 44,433,322,323' ,src:Bitcoin},
+ const  COINS=[{name:'Bitcoin',price: 'Rs.1343433',precent: -0.75,marketcap:'Rs 44,433,322,323' ,src:Bitcoin},
        {name:'Ethereum',price: 'Rs.1343433',precent: 0.75,marketcap:'Rs 44,433,322,323',src:ethereum},
-       {name:'Tether',price: 'Rs.1343433',precent: 2,marketcap:'Rs 44,433,322,323',src:tether},
+       {name:'Tether',price: 'Rs.1343433',precent: -2,marketcap:'Rs 44,433,322,323',src:tether},
        {name:'BNB',price: 'Rs.1343433',precent: -1,marketcap:'Rs 44,433,322,323',src:bnb},
 
       ]
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+
     <App coins={COINS} />
-  </React.StrictMode>
+
 );
 
 
