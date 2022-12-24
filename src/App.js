@@ -68,11 +68,11 @@ function CoinCrypitoList(props) {
      updatecoins(items);
     }
 
-  const filterText=props.filterText;
+  const filterText=props.filterText.toLowerCase();
      let rows=[];
     
-     coins.map((coin,index )=> {
-       if ( coin.name.indexOf(filterText)===-1)
+     coins.forEach((coin,index )=> {
+       if (coin.name.toLowerCase().indexOf(filterText)===-1)
        return; 
        rows.push(<Draggable key={coin.name} draggableId={coin.name} index={index}>
                   {(provided) => (
