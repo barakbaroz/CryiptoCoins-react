@@ -8,6 +8,7 @@ function App(props) {
 
 {
   console.log("helloe githab");
+  console.log("newwwwwwwwwww");
 }
 
 function Percentage(props) {
